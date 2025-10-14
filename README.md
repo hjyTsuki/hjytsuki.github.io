@@ -1,1 +1,1 @@
-This is the source code to Weijie Wang's academic website: https://lhmd.top/. This repo is developed with https://jonbarron.info/.
+This is the source code to Jinyang Huang's academic website: https://hjytsuki.top/. This repo is developed with https://jonbarron.info/.
