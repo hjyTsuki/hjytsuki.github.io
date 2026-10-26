@@ -1,763 +1,266 @@
-<!DOCTYPE HTML>
-<html lang="en">
-
-
+<!doctype html>
+<html lang="zh-CN">
 <head>
-  <script>
-    (function () {
-      var a_idx = 0;
-      window.onclick = function (event) {
-        var a = new Array("✨", "🤖", "🥳", "👋", "🦾", "🐽");
-
-        var heart = document.createElement("b");
-        heart.onselectstart = new Function('event.returnValue=false');
-
-        document.body.appendChild(heart).innerHTML = a[a_idx];
-        a_idx = (a_idx + 1) % a.length;
-        heart.style.cssText = "position: fixed;left:-100%;";
-
-        var f = 16,
-          x = event.clientX - f / 2,
-          y = event.clientY - f,
-          c = randomColor(),
-          a = 1,
-          s = 1.2;
-
-        var timer = setInterval(function () {
-          if (a <= 0) {
-            document.body.removeChild(heart);
-            clearInterval(timer);
-          } else {
-            heart.style.cssText = "font-size:16px;cursor: default;position: fixed;color:" +
-              c + ";left:" + x + "px;top:" + y + "px;opacity:" + a + ";transform:scale(" +
-              s + ");";
-
-            y--;
-            a -= 0.016;
-            s += 0.002;
-          }
-        }, 15)
-
-      }
-      function randomColor() {
-
-        return "rgb(" + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + "," + (~~(Math
-          .random() * 255)) + ")";
-
-      }
-    }());
-  </script>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Jinyang Huang | 黄金阳</title>
-  <meta name="author" content="Jinyang Huang">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <!-- <link rel="icon" type="image/png" href="./images/icon.png"> -->
-  <script>
-    var _hmt = _hmt || [];
-    (function () {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?a4292ca8f2fe5fd7dc6dfd78cc894aab";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
+  <meta name="color-scheme" content="light">
+  <title>黄金阳 · Jinyang Huang</title>
+  <meta name="author" content="黄金阳 · Jinyang Huang">
+  <meta name="description" content="黄金阳，中南大学硕士研究生。研究方向包括 Code Agent、Environment Scaling 与 Post-Train，关注代码智能体、环境合成与智能体后训练。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="黄金阳 · Jinyang Huang">
+  <meta property="og:description" content="中南大学硕士研究生 · Code Agent · Environment Scaling · Post-Train">
+  <meta property="og:url" content="https://hjytsuki.github.io/">
+  <link rel="canonical" href="https://hjytsuki.github.io/">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="stylesheet.css">
 </head>
-
 <body>
-  <table
-    style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr style="padding:0px">
-                <td style="padding:2.5%;width:68%;vertical-align:middle">
-                  <p style="text-align:center">
-                    <name>Jinyang Huang &nbsp | &nbsp 黄金阳</name>
-                  </p>
-                  <p>
-                    I am a master student in Computer Science at <a
-                    href="https://www.csu.edu.cn/" target="_blank">Central South University</a> advised by Prof.
-                    <a href="https://bohanzhuang.github.io/" target="_blank">Libo Qin</a>. My research interests lie
-                    in the fields of LLM for code.
-                    <!-- Now, I am a research intern at at <a
-                      href="https://www.microsoft.com/en-us/research/group/msr-asia-shanghai/" target="_blank">Microsoft
-                      Research Asia - Shanghai Lab</a>. -->
-                    Previously, I obtained my B.E. degree from <a href="http://www.en.cs.zju.edu.cn/"
-                      target="_blank">College of Computer Science and Technology</a> and <a
-                      href="http://ckc.zju.edu.cn/ckcen/" target="_blank">Chu Kochen Honors College</a> (ACEE) at <a
-                      href="https://www.zju.edu.cn/english/" target="_blank">Zhejiang University</a> in 2025. During my
-                    undergraduate study, I was fortunate to work with Prof. <a href="https://www.xzhou.me/"
-                      target="_blank">Xiaowei Zhou</a>, Prof. <a href="https://pengsida.net/" target="_blank">Sida
-                      Peng</a>, Prof. <a href="https://scholar.google.com/citations?user=T6om-m4AAAAJ"
-                      target="_blank">Huajun Chen</a>, Prof. <a href="https://scholar.google.com/citations?user=A7u-ZowAAAAJ" target="_blank">Keyan Ding</a> and Dr. <a href="http://www.zhengzhu.net/" target="_blank">Zheng
-                      Zhu</a>.
-                  </p>
-                  <p style="text-align:center">
-                    <a href="mailto:wangweijie@zju.edu.cn">Email</a> &nbsp/&nbsp
-                    <a href="https://scholar.google.com/citations?user=Hsxmwr0AAAAJ">Google Scholar</a> &nbsp/&nbsp
-                    <a href="https://github.com/lhmd/">Github</a>&nbsp/&nbsp
-                    <a href="https://x.com/wjwang2003">X</a>&nbsp/&nbsp
-                    <a href="https://www.linkedin.com/in/weijie-wang-79378b311/">LinkedIn</a>
-                  </p>
-                </td>
-                <td style="padding:2.5%;width:40%;max-width:40%">
-                  <a href="./images/main.jpg"><img style="width:100%;max-width:100%" alt="profile photo"
-                      src="./images/main.jpg"></a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+  <a class="skip-link" href="#main">跳转到正文</a>
+  <header class="site-header">
+    <a class="wordmark" href="#about" aria-label="黄金阳，返回个人介绍">HJY<span>.</span></a>
+    <nav aria-label="主导航">
+      <a href="#research">研究方向</a>
+      <a href="#publications">论文</a>
+      <a href="#experience">实习经历</a>
+      <a href="#education">教育经历</a>
+    </nav>
+  </header>
 
-          <!-- News -->
-          <table
-            style="width:90%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
+  <main id="main">
+    <section class="hero" id="about" aria-labelledby="name">
+      <div class="hero-content">
+        <p class="eyebrow">中南大学 · 硕士研究生</p>
+        <h1 id="name">黄金阳<span lang="en">Jinyang Huang</span></h1>
+        <p class="research-line" lang="en">Code Agent <span>·</span> Environment Scaling <span>·</span> Post-Train</p>
+        <p class="intro">我关注代码智能体的能力评估、可扩展的环境合成与智能体后训练，希望通过更有判别力的评测和更丰富的训练环境，提升智能体解决真实任务的能力。</p>
+        <p class="intro">目前在中南大学攻读硕士学位，并在字节跳动中国交易与广告团队从事应用算法实习。本科毕业于湖南师范大学。</p>
+      </div>
+      <aside class="contact" aria-label="联系方式与个人链接">
+        <p class="contact-heading">保持联系</p>
+        <a class="email" href="mailto:hjy.tsuki@gmail.com">hjy.tsuki@gmail.com</a>
+        <div class="profile-links">
+          <a href="https://scholar.google.com/citations?user=Oqn8PEsAAAAJ&amp;hl=zh-CN" target="_blank" rel="noopener noreferrer">Google Scholar <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/hjyTsuki" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+        <a class="resume-link" href="pdf/resume-zh.pdf" download="黄金阳-简历.pdf">下载中文简历 <span aria-hidden="true">↓</span></a>
+      </aside>
+    </section>
 
-              <!-- <br> -->
-              <heading>News</heading>
-              <br>
-              <td style="padding:0px;width:100%;vertical-align:middle">
-                <p>
-                  <li>[2025/09] 🎉 Our paper <a href='https://lhmd.top/zpressor/'>ZPressor</a> has been accepted
-                    to NeurIPS 2025!</li>
-                  <li>[2025/06] 🎉 Our paper <a href='https://wonderturbo.github.io/'>WonderTurbo</a> has been accepted
-                    to ICCV 2025!</li>
-                  <li>[2024/05] 🎉 The national university student research project <em>Research on 3D scene
-                      reconstruction and decoupling technology based on implicit neural representation</em>, which I am
-                    responsible for, is successfully completed!</li>
-                </p>
-              </td>
-      </tr>
-    </tbody>
-  </table>
+    <section class="section research-section" id="research" aria-labelledby="research-title">
+      <div class="section-heading">
+        <h2 id="research-title">研究方向</h2>
+        <span lang="en">Research interests</span>
+      </div>
+      <div class="research-grid">
+        <article>
+          <span class="research-number" aria-hidden="true">01</span>
+          <h3 lang="en">Code Agent</h3>
+          <p>面向代码调试与代码安全，构建可执行任务和具有判别力的评测集。</p>
+        </article>
+        <article>
+          <span class="research-number" aria-hidden="true">02</span>
+          <h3 lang="en">Environment Scaling</h3>
+          <p>从真实环境出发合成环境家族，为终端智能体提供可扩展的训练任务。</p>
+        </article>
+        <article>
+          <span class="research-number" aria-hidden="true">03</span>
+          <h3 lang="en">Post-Train</h3>
+          <p>探索 SFT、RL 与 GRPO，让智能体学会检查环境、理解反馈并采取行动。</p>
+        </article>
+      </div>
+    </section>
 
-  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-
-      <heading>Publications</heading>
-      <br>
-      <p>
-        <span>&#42;</span> <em>Equal contribution</em> &nbsp/&nbsp <span>&#8224;</span> <em>Corresponding authors</em>
-      </p>
-
-
-      <!-- ZPressor  -->
-      <tr bgcolor="#ffffdc">
-        <td style="padding:20px;width:30%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='malle_image'>
-              <br>
-              <img src='images/zpressor.jpg' width="190">
-            </div>
-            <br>
-            <img src='images/zpressor.jpg' width="190">
+    <section class="section" id="publications" aria-labelledby="publications-title">
+      <div class="section-heading">
+        <h2 id="publications-title">论文</h2>
+        <span lang="en">Publications &amp; preprints</span>
+      </div>
+      <div class="paper-list">
+        <article class="paper paper-featured">
+          <div class="paper-venue">
+            <span class="venue-name" lang="en">ICML 2026</span>
+            <span class="venue-detail" lang="en">Oral · Top 0.7%</span>
           </div>
-          <script type="text/javascript">
-            function malle_start() {
-              document.getElementById('malle_image').style.opacity = "1";
-            }
-
-            function malle_stop() {
-              document.getElementById('malle_image').style.opacity = "0";
-            }
-            malle_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:70%;vertical-align:middle">
-          <a href="">
-            <papertitle>ZPressor: Bottleneck-Aware Compression for Scalable Feed-Forward 3DGS</papertitle>
-          </a>
-          <br>
-          <a class="a2" href="https://lhmd.top/" target="_blank"><strong>Weijie Wang</strong></a><span>&#8224;</span>,
-          <a class="a2" href="https://donydchen.github.io/" target="_blank">Donny Y. Chen</a><span>&#8224;</span>,
-          <a class="a2" href="https://steve-zeyu-zhang.github.io/" target="_blank">Zeyu Zhang</a>,
-          <a class="a2" href="https://openreview.net/profile?id=~Duochao_Shi1" target="_blank">Duochao Shi</a>,
-          <a class="a2" href="https://github.com/AkideLiu" target="_blank">Akide Liu</a>,
-          <a class="a2" href="https://bohanzhuang.github.io/" target="_blank">Bohan Zhuang</a>
-          <br>
-          <a href="https://arxiv.org/abs/2505.23734" target="_blank">Paper</a>
-          /
-          <a href="https://lhmd.top/zpressor/" target="_blank">Project</a>
-          /
-          <a href="https://github.com/ziplab/ZPressor" target="_blank">Code</a>
-          /
-          <a href="https://huggingface.co/lhmd/ZPressor" target="_blank">Models</a>
-          /
-          <a href="https://mp.weixin.qq.com/s/H4cZsUaG2go97Wv6SKu-zw" target="_blank">QbitAI</a>
-          /
-          <a href="https://mp.weixin.qq.com/s/vGal9jlQ5UwKPpzOCKEpAg" target="_blank">AI era</a>
-          /
-          <a href="https://www.bilibili.com/video/BV1NLN8zpENu" target="_blank">Talk@3DCVer</a>
-          <br>
-          <em><strong>NeurIPS 2025</strong></em>
-          <p></p>
-          <p>
-            ZPressor is an architecture-agnostic module that compresses multi-view inputs for scalable feed-forward 3DGS.
-          </p>
-        </td>
-      </tr>
-
-      <!-- WonderTurbo  -->
-      <tr>
-        <td style="padding:20px;width:30%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='wonderturbo_image'>
-              <br>
-              <img src='images/wonderturbo.png' width="190">
+          <div class="paper-content">
+            <h3 lang="en"><a href="https://arxiv.org/pdf/2602.03012" target="_blank" rel="noopener noreferrer">CVE-Factory: Scaling Agentic Tasks for Code Security</a></h3>
+            <p class="author-role">共同第一作者</p>
+            <p class="paper-description">提出多智能体框架 CVE-Factory，通过解耦–耦合六阶段流水线，将稀疏 CVE 元数据自动转化为可执行任务，方案正确率达 <strong>95%</strong>。构建 LiveCVEBench，通过拒绝采样轨迹微调，将 Qwen3-32B 的表现从 <strong>5.3% 提升至 35.8%</strong>，超过 Claude 4.5 Sonnet；Terminal-Bench 从 <strong>12.5% 提升至 28.75%</strong>。</p>
+            <div class="paper-links">
+              <a href="https://arxiv.org/pdf/2602.03012" target="_blank" rel="noopener noreferrer" aria-label="CVE-Factory 论文">arXiv <span aria-hidden="true">↗</span></a>
+              <a href="https://github.com/livecvebench/CVE-Factory" target="_blank" rel="noopener noreferrer" aria-label="CVE-Factory 代码">Code <span aria-hidden="true">↗</span></a>
             </div>
-            <br>
-            <img src='images/wonderturbo.png' width="190">
           </div>
-          <script type="text/javascript">
-            function wonderturbo_start() {
-              document.getElementById('wonderturbo_image').style.opacity = "1";
-            }
+        </article>
 
-            function wonderturbo_stop() {
-              document.getElementById('wonderturbo_image').style.opacity = "0";
-            }
-            wonderturbo_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:70%;vertical-align:middle">
-          <a href="">
-            <papertitle>WonderTurbo: Generating Interactive 3D World in 0.72 Seconds</papertitle>
-          </a>
-          <br>
-          <a class="a2" href="" target="_blank">Chaojun Ni</a><span>&#42;</span>,
-          <a class="a2" href="" target="_blank">Xiaofeng Wang</a><span>&#42;</span>,
-          <a class="a2" href="" target="_blank">Zheng Zhu</a><span>&#42;</span><span>&#8224;</span>,
-          <a class="a2" href="https://lhmd.top/" target="_blank"><strong>Weijie Wang</strong></a><span>&#42;</span>,
-          <a class="a2" href="" target="_blank">Haoyun Li</a>,
-          <a class="a2" href="" target="_blank">Guosheng Zhao</a>,
-          <a class="a2" href="" target="_blank">Jie Li</a>,
-          <a class="a2" href="" target="_blank">Wenkang Qin</a>,
-          <a class="a2" href="" target="_blank">Guan Huang</a>,
-          <a class="a2" href="" target="_blank">Wenjun Mei</a><span>&#8224;</span>
-          <br>
-          <a href="https://www.arxiv.org/abs/2504.02261" target="_blank">Paper</a>
-          /
-          <a href="https://wonderturbo.github.io/" target="_blank">Project</a>
-          /
-          <a href="https://github.com/GigaAI-research/WonderTurbo" target="_blank">Code</a>
-          <br>
-          <em><strong>ICCV 2025</strong></em>
-          <p></p>
-          <p>
-            We introduce WonderTurbo, the first real-time interactive 3D scene generation framework capable of
-            generating novel perspectives of 3D scenes within 0.72 seconds.
-          </p>
-        </td>
-      </tr>
-
-      <!-- TransDiff  -->
-      <tr>
-        <td style="padding:20px;width:30%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='transdiff_image'>
-              <br>
-              <img src='images/transdiff.jpg' width="190">
+        <article class="paper">
+          <div class="paper-venue">
+            <span class="venue-name" lang="en">ICLR 2026</span>
+            <span class="venue-detail" lang="en">Poster</span>
+          </div>
+          <div class="paper-content">
+            <h3 lang="en"><a href="https://arxiv.org/pdf/2510.08720" target="_blank" rel="noopener noreferrer">How Many Tests Are Enough? A Binary-Matrix Perspective</a></h3>
+            <p class="author-role">共同第一作者</p>
+            <p class="paper-description">面向代码生成强化学习中的测试用例质量评估，提出 WrongSelect：将 TestCase 与 Wrong Code 的通过关系建模为二值矩阵，利用矩阵秩过滤同模式错误代码，构建紧凑且具判别性的评测集，降低暴力匹配成本并避免重复错误导致的分数虚高。</p>
+            <div class="paper-links">
+              <a href="https://arxiv.org/pdf/2510.08720" target="_blank" rel="noopener noreferrer" aria-label="How Many Tests Are Enough 论文">arXiv <span aria-hidden="true">↗</span></a>
+              <a href="https://github.com/hjyTsuki/TC-Bench-Evaluate" target="_blank" rel="noopener noreferrer" aria-label="How Many Tests Are Enough 代码">Code <span aria-hidden="true">↗</span></a>
             </div>
-            <br>
-            <img src='images/transdiff.jpg' width="190">
           </div>
-          <script type="text/javascript">
-            function transdiff_start() {
-              document.getElementById('transdiff_image').style.opacity = "1";
-            }
+        </article>
 
-            function transdiff_stop() {
-              document.getElementById('transdiff_image').style.opacity = "0";
-            }
-            transdiff_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:70%;vertical-align:middle">
-          <a href="">
-            <papertitle>TransDiff: Diffusion-Based Method for Manipulating Transparent Objects Using a Single RGB-D
-              Image</papertitle>
-          </a>
-          <br>
-          <a class="a2" href="" target="_blank">Haoxiao Wang</a><span>&#42;</span>,
-          <a class="a2" href="" target="_blank">Kaichen Zhou</a><span>&#42;</span>,
-          <a class="a2" href="" target="_blank">Binrui Gu</a>,
-          <a class="a2" href="" target="_blank">Zhiyuan Feng</a>,
-          <a class="a2" href="https://lhmd.top/" target="_blank"><strong>Weijie Wang</strong></a>,
-          <a class="a2" href="" target="_blank">Peilin Sun</a>,
-          <a class="a2" href="" target="_blank">Yicheng Xiao</a>,
-          <a class="a2" href="" target="_blank">Jianhua Zhang</a>,
-          <a class="a2" href="" target="_blank">Hao Dong</a><span>&#8224;</span>
-          <br>
-          <a href="https://arxiv.org/abs/2503.12779" target="_blank">Paper</a>
-          /
-          <a href="https://wang-haoxiao.github.io/TransDiff/" target="_blank">Project</a>
-          /
-          <a href="https://github.com/Trans-Diff/TransDiff" target="_blank">Code</a>
-          <br>
-          <em><strong>ICRA 2025</strong></em>
-          <p></p>
-          <p>
-            We propose a single-view RGB-D-based depth completion framework, TransDiff, that leverages the Denoising
-            Diffusion Probabilistic Models(DDPM) to achieve material-agnostic object grasping in desktop.
-          </p>
-        </td>
-      </tr>
+        <article class="paper">
+          <div class="paper-venue">
+            <span class="venue-name" lang="en">ICLR 2027</span>
+            <span class="venue-detail submission">在投</span>
+          </div>
+          <div class="paper-content">
+            <h3 lang="en">SCOPE: Environment Families for Terminal Agents</h3>
+            <p class="author-role">共同第一作者</p>
+            <p class="paper-description">提出可扩展的终端环境合成与后训练管线 SCOPE，从真实 Docker 环境和成功轨迹自动生成 observation-preserving counterfactual environments，让智能体先检查环境状态再决策，同时生成 inspect-then-act SFT 轨迹与 RL/GRPO 数据。在 <strong>Terminal-Bench 2.1</strong> 上，SFT 从 <strong>22.2% 提升至 30.8%</strong>，Direct RL（GRPO）从 <strong>22.2% 提升至 39.4%</strong>。</p>
+          </div>
+        </article>
 
-      <!-- Street Gaussians  -->
-      <tr>
-        <td style="padding:20px;width:30%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='street_gaussians_image'>
-              <br>
-              <img src='images/street_gaussians.jpg' width="190">
+        <article class="paper">
+          <div class="paper-venue">
+            <span class="venue-name" lang="en">ICLR 2027</span>
+            <span class="venue-detail submission">在投</span>
+          </div>
+          <div class="paper-content">
+            <h3 lang="en"><a href="https://arxiv.org/abs/2608.06197" target="_blank" rel="noopener noreferrer">EnvACE: World Rehearsal for Agentic RL</a></h3>
+            <p class="author-role">作者</p>
+            <p class="paper-description">通过 World Rehearsal 机制，让单一策略同时执行动作、预测环境反馈并据此决策，从而无需外部环境即可学习环境动态，并在 BFCL-v4、τ²-Bench 和 VitaBench 上取得更优表现。</p>
+            <div class="paper-links">
+              <a href="https://arxiv.org/abs/2608.06197" target="_blank" rel="noopener noreferrer" aria-label="EnvACE 论文">arXiv <span aria-hidden="true">↗</span></a>
+              <a href="https://github.com/Within-yao/EnvACE" target="_blank" rel="noopener noreferrer" aria-label="EnvACE 代码">Code <span aria-hidden="true">↗</span></a>
             </div>
-            <br>
-            <img src='images/street_gaussians.jpg' width="190">
           </div>
-          <script type="text/javascript">
-            function street_gaussians_start() {
-              document.getElementById('street_gaussians_image').style.opacity = "1";
-            }
+        </article>
 
-            function street_gaussians_stop() {
-              document.getElementById('street_gaussians_image').style.opacity = "0";
-            }
-            street_gaussians_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:70%;vertical-align:middle">
-          <a href="">
-            <papertitle>Street Gaussians for Modeling Dynamic Urban Scenes</papertitle>
-          </a>
-          <br>
-          <a class="a2" href="" target="_blank">Yunzhi Yan</a>,
-          <a class="a2" href="" target="_blank">Haotong Lin</a>,
-          <a class="a2" href="" target="_blank">Chenxu Zhou</a>,
-          <a class="a2" href="https://lhmd.top/" target="_blank"><strong>Weijie Wang</strong></a>,
-          <a class="a2" href="" target="_blank">Haiyang Sun</a>,
-          <a class="a2" href="" target="_blank">Kun Zhan</a>,
-          <a class="a2" href="" target="_blank">Xianpeng Lang</a>,
-          <a class="a2" href="" target="_blank">Xiaowei Zhou</a>,
-          <a class="a2" href="" target="_blank">Sida Peng</a><span>&#8224;</span>
-          <br>
-          <a href="https://arxiv.org/abs/2401.01339" target="_blank">Paper</a>
-          /
-          <a href="https://zju3dv.github.io/street_gaussians/" target="_blank">Project</a>
-          /
-          <a href="https://github.com/zju3dv/street_gaussians" target="_blank">Code</a>
-          /
-          <a href="https://drive.google.com/drive/folders/1ghpE_kBwqXiWgiSWAajByjPsmj1y0l1H" target="_blank">Data</a>
-          <br>
-          <em><strong>ECCV 2024</strong></em>
-          <p></p>
-          <p>
-            This paper aims to tackle the problem of modeling dynamic urban street scenes from monocular videos. We
-            introduce Street Gaussians, a new explicit scene representation that tackles some major limitations.
-          </p>
-        </td>
-      </tr>
+        <article class="paper paper-compact">
+          <div class="paper-venue">
+            <span class="venue-name" lang="en">ACL</span>
+            <span class="venue-detail submission">在投</span>
+          </div>
+          <div class="paper-content">
+            <h3 lang="en">MMRefineBench: Benchmarking Multimodal Self-Correction</h3>
+            <p class="author-role">作者</p>
+          </div>
+        </article>
 
-
-    </tbody>
-  </table>
-
-
-  <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-
-      <heading>Preprints</heading>
-      <br>
-
-      <tr>
-        <td style="padding:20px;width:30%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='pmloss_image'>
-              <br>
-              <img src='images/pmloss.png' width="190">
+        <article class="paper paper-compact">
+          <div class="paper-venue">
+            <span class="venue-name" lang="en">USENIX Security 2026</span>
+            <span class="venue-detail" lang="en">CCF-A</span>
+          </div>
+          <div class="paper-content">
+            <h3 lang="en"><a href="https://www.usenix.org/conference/usenixsecurity26/presentation/peng-qihang" target="_blank" rel="noopener noreferrer">H3Act: HTTP/3-to-HTTP/1.1 Conversion Anomalies</a></h3>
+            <p class="author-role">作者</p>
+            <div class="paper-links">
+              <a href="https://www.usenix.org/conference/usenixsecurity26/presentation/peng-qihang" target="_blank" rel="noopener noreferrer" aria-label="H3Act 论文">Paper <span aria-hidden="true">↗</span></a>
             </div>
-            <br>
-            <img src='images/pmloss.png' width="190">
           </div>
-          <script type="text/javascript">
-            function pmloss_start() {
-              document.getElementById('pmloss_image').style.opacity = "1";
-            }
+        </article>
 
-            function pmloss_stop() {
-              document.getElementById('pmloss_image').style.opacity = "0";
-            }
-            pmloss_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:70%;vertical-align:middle">
-          <a href="">
-            <papertitle>Revisiting Depth Representations for Feed-Forward 3D Gaussian Splatting</papertitle>
-          </a>
-          <br>
-          <a class="a2" href="https://openreview.net/profile?id=~Duochao_Shi1" target="_blank">Duochao
-            Shi</a><span>&#42;</span>,
-          <a class="a2" href="https://lhmd.top/" target="_blank"><strong>Weijie Wang</strong></a><span>&#42;</span>,
-          <a class="a2" href="https://donydchen.github.io/" target="_blank">Donny Y. Chen</a>,
-          <a class="a2" href="https://steve-zeyu-zhang.github.io/" target="_blank">Zeyu Zhang</a>,
-          <a class="a2" href="https://jwbian.net/" target="_blank">Jia-Wang Bian</a>,
-          <a class="a2" href="https://bohanzhuang.github.io/" target="_blank">Bohan Zhuang</a>,
-          <a class="a2" href="https://cshen.github.io/" target="_blank">Chunhua Shen</a><span>&#8224;</span>
-          <br>
-          <a href="https://arxiv.org/abs/2506.05327" target="_blank">Paper</a>
-          /
-          <a href="https://aim-uofa.github.io/PMLoss/" target="_blank">Project</a>
-          /
-          <a href="https://github.com/aim-uofa/PM-Loss/" target="_blank">Code</a>
-          <br>
-          <em><strong>ArXiv preprint</strong></em>
-          <p></p>
-          <p>
-            We introduce PM-Loss, a novel regularization loss based on a learned point map for feed-forward 3DGS,
-            leading to smoother 3D geometry and better rendering.
-          </p>
-        </td>
-      </tr>
-
-      <tr>
-        <td style="padding:20px;width:30%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='revisual_r1_image'>
-              <br>
-              <img src='images/revisual_r1.png' width="190">
+        <article class="paper paper-compact">
+          <div class="paper-venue">
+            <span class="venue-name" lang="en">ACL Findings 2025</span>
+            <span class="venue-detail" lang="en">CCF-A</span>
+          </div>
+          <div class="paper-content">
+            <h3 lang="en"><a href="https://arxiv.org/abs/2506.13824" target="_blank" rel="noopener noreferrer">MLDebugging: Code Debugging Across Multiple Libraries</a></h3>
+            <p class="author-role">第一作者</p>
+            <div class="paper-links">
+              <a href="https://arxiv.org/abs/2506.13824" target="_blank" rel="noopener noreferrer" aria-label="MLDebugging 论文">arXiv <span aria-hidden="true">↗</span></a>
+              <a href="https://github.com/hjyTsuki/MLDebugging" target="_blank" rel="noopener noreferrer" aria-label="MLDebugging 代码">Code <span aria-hidden="true">↗</span></a>
             </div>
-            <br>
-            <img src='images/revisual_r1.png' width="190">
           </div>
-          <script type="text/javascript">
-            function revisual_r1_start() {
-              document.getElementById('revisual_r1_image').style.opacity = "1";
-            }
+        </article>
 
-            function revisual_r1_stop() {
-              document.getElementById('revisual_r1_image').style.opacity = "0";
-            }
-            revisual_r1_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:70%;vertical-align:middle">
-          <a href="">
-            <papertitle>Advancing Multimodal Reasoning: From Optimized Cold Start to Staged Reinforcement Learning
-            </papertitle>
-          </a>
-          <br>
-          <a class="a2" href="" target="_blank">Shuang Chen</a><span>&#42;</span>,
-          <a class="a2" href="" target="_blank">Yue Guo</a><span>&#42;</span>,
-          <a class="a2" href="" target="_blank">Zhaochen Su</a>,
-          <a class="a2" href="" target="_blank">Yafu Li</a>,
-          <a class="a2" href="" target="_blank">Yulun Wu</a>,
-          <a class="a2" href="" target="_blank">Jiacheng Chen</a>,
-          <a class="a2" href="" target="_blank">Jiayu Chen</a>,
-          <a class="a2" href="" target="_blank"><strong>Weijie Wang</strong></a>,
-          <a class="a2" href="" target="_blank">Xiaoye Qu</a><span>&#8224;</span>,
-          <a class="a2" href="" target="_blank">Yu Cheng</a><span>&#8224;</span>
-          <br>
-          <a href="https://arxiv.org/abs/2506.04207" target="_blank">Paper</a>
-          /
-          <a href="https://github.com/CSfufu/Revisual-R1" target="_blank">Code</a>
-          <br>
-          <em><strong>ArXiv preprint</strong></em>
-          <p></p>
-          <p>
-            We introduce ReVisual-R1, achieving a new state-of-the-art among open-source 7B MLLMs on challenging
-            benchmarks.
-          </p>
-        </td>
-      </tr>
-
-      <tr>
-        <td style="padding:20px;width:30%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='sciknoweval_image'>
-              <br>
-              <img src='images/sciknoweval.png' width="190">
+        <article class="paper paper-compact">
+          <div class="paper-venue">
+            <span class="venue-name" lang="en">ICASSP 2026</span>
+            <span class="venue-detail" lang="en">CCF-B</span>
+          </div>
+          <div class="paper-content">
+            <h3 lang="en"><a href="https://arxiv.org/pdf/2601.19309" target="_blank" rel="noopener noreferrer">Beyond Shadows: High-Fidelity Facial Shadow Removal</a></h3>
+            <p class="author-role">作者</p>
+            <div class="paper-links">
+              <a href="https://arxiv.org/pdf/2601.19309" target="_blank" rel="noopener noreferrer" aria-label="Beyond Shadows 论文">arXiv <span aria-hidden="true">↗</span></a>
             </div>
-            <br>
-            <img src='images/sciknoweval.png' width="190">
           </div>
-          <script type="text/javascript">
-            function sciknoweval_start() {
-              document.getElementById('sciknoweval_image').style.opacity = "1";
-            }
+        </article>
 
-            function sciknoweval_stop() {
-              document.getElementById('sciknoweval_image').style.opacity = "0";
-            }
-            sciknoweval_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:70%;vertical-align:middle">
-          <a href="">
-            <papertitle>SciKnowEval: Evaluating Multi-level Scientific Knowledge of Large Language Models</papertitle>
-          </a>
-          <br>
-          <a class="a2" href="" target="_blank">Kehua Feng</a><span>&#42;</span>,
-          <a class="a2" href="" target="_blank">Keyan Ding</a><span>&#42;</span>,
-          <a class="a2" href="https://lhmd.top/" target="_blank"><strong>Weijie Wang</strong></a><span>&#42;</span>,
-          <a class="a2" href="" target="_blank">Xiang Zhuang</a>,
-          <a class="a2" href="" target="_blank">Zeyuan Wang</a>,
-          <a class="a2" href="" target="_blank">Ming Qin</a>,
-          <a class="a2" href="" target="_blank">Yu Zhao</a>,
-          <a class="a2" href="" target="_blank">Jianhua Yao</a>,
-          <a class="a2" href="" target="_blank">Qiang Zhang</a>,
-          <a class="a2" href="" target="_blank">Huajun Chen</a><span>&#8224;</span>
-          <br>
-          <a href="https://arxiv.org/abs/2406.09098" target="_blank">Paper</a>
-          /
-          <a href="http://scimind.ai/sciknoweval/" target="_blank">Project</a>
-          <br>
-          <em><strong>ArXiv preprint</strong></em>
-          <p></p>
-          <p>
-            This paper introduce the SciKnowEval benchmark, a novel framework that systematically evaluates LLMs across
-            five progressive levels of scientific knowledge.
-          </p>
-        </td>
-      </tr>
+        <article class="paper paper-compact">
+          <div class="paper-venue">
+            <span class="venue-name" lang="en">BIBM 2026</span>
+            <span class="venue-detail" lang="en">CCF-B</span>
+          </div>
+          <div class="paper-content">
+            <h3 lang="en"><a href="https://arxiv.org/abs/2609.31314" target="_blank" rel="noopener noreferrer">CytoSPM: Open-Vocabulary Cytopathology Detection</a></h3>
+            <p class="author-role">作者</p>
+            <div class="paper-links">
+              <a href="https://arxiv.org/abs/2609.31314" target="_blank" rel="noopener noreferrer" aria-label="CytoSPM 论文">arXiv <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
 
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="section-heading">
+        <h2 id="experience-title">实习经历</h2>
+        <span lang="en">Experience</span>
+      </div>
+      <div class="experience-list">
+        <article class="experience-item">
+          <div class="item-heading">
+            <h3>字节跳动</h3>
+            <p class="date"><time datetime="2026-07">2026.07</time> — 至今</p>
+          </div>
+          <p class="item-role">中国交易与广告 · 应用算法</p>
+          <p class="experience-description">面向线上广告审核 Workflow，配置轻量级路由模型为审核请求选择合适的模型，降低整体调用成本。利用 Qwen-0.8B 的 Last Hidden States 构建分类与 Decision Model，清洗存在分布偏移的线上训练数据，构建与 Pass@k 对齐的标签并扩展数据规模。</p>
+          <p class="experience-result">在维持 <strong>90% 精确率</strong>的情况下，将召回率从 <strong>52.91% 提升至 77.02%</strong>，推动 <strong>10 个 Tag</strong> 上线并取得可量化收益。</p>
+        </article>
+        <article class="experience-item">
+          <div class="item-heading">
+            <h3>马栏山音视频实验室</h3>
+            <p class="date"><time datetime="2025-06">2025.06</time> — <time datetime="2025-09">2025.09</time></p>
+          </div>
+          <p class="item-role">应用算法</p>
+        </article>
+        <article class="experience-item">
+          <div class="item-heading">
+            <h3>度小满金融</h3>
+            <p class="date"><time datetime="2025-01">2025.01</time> — <time datetime="2025-03">2025.03</time></p>
+          </div>
+          <p class="item-role">数据智能应用部 · Research</p>
+        </article>
+      </div>
+    </section>
 
-    </tbody>
-  </table> -->
+    <section class="section education-section" id="education" aria-labelledby="education-title">
+      <div class="section-heading">
+        <h2 id="education-title">教育经历</h2>
+        <span lang="en">Education</span>
+      </div>
+      <div class="education-grid">
+        <article>
+          <p class="education-degree">硕士 · <time datetime="2025">2025</time> — 至今</p>
+          <h3>中南大学</h3>
+        </article>
+        <article>
+          <p class="education-degree">本科 · <time datetime="2021">2021</time> — <time datetime="2025">2025</time></p>
+          <h3>湖南师范大学 <span class="school-note">211</span></h3>
+          <p class="education-detail">GPA <strong>92.04/100</strong> <span aria-hidden="true">·</span> 专业排名 <strong>2/74</strong></p>
+        </article>
+      </div>
+    </section>
+  </main>
 
-
-  <table width="100%" align="center" border="0" cellpadding="10">
-    <tbody>
-      <br>
-      <heading>Experience</heading>
-      <br>
-      <tr>
-        <br>
-        <td style="padding-left:20px;padding-right:20px;width:20%;vertical-align:middle"><img src="images/logo/zju.png"
-            , width="100"></td>
-        <td width="90%" valign="center">
-          <strong><a href="http://www.en.cs.zju.edu.cn/" target="_blank">College of Computer Science and Technology,
-              Zhejiang University</a></strong>
-          <br> 2025.09 - Present
-          <br> <strong>Ph.D. Student</strong> at <a href="https://ziplab.co/" target="_blank">ZIP Lab</a>, <a
-            href="http://www.cad.zju.edu.cn/" target="_blank">State Key Lab of CAD&CG</a>
-          <br> Advisor: Prof. <a href="https://bohanzhuang.github.io/">Bohan Zhuang</a>
-        </td>
-      </tr>
-      <tr>
-        <br>
-        <td style="padding-left:20px;padding-right:20px;width:20%;vertical-align:middle"><img src="images/logo/msra.png"
-            , width="100"></td>
-        <td width="90%" valign="center">
-          <strong><a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/"
-              target="_blank">Microsoft Research Asia (MSRA)</a></strong>
-          <br> 2025.07 - Present
-          <br> <strong>Research Intern</strong> at <a
-            href="https://www.microsoft.com/en-us/research/group/msr-asia-shanghai/" target="_blank">Microsoft Research
-            Asia - Shanghai Lab</a>
-          <br> Advisor: <a href="https://www.microsoft.com/en-us/research/people/yuqyang/">Yuqing Yang</a>, <a href="https://www.microsoft.com/en-us/research/people/yifanyang/">Yifan Yang</a> and <a href="https://www.microsoft.com/en-us/research/people/zhiyuhe/">Zhiyuan He</a>
-        </td>
-      </tr>
-      <tr>
-        <br>
-        <td style="padding-left:20px;padding-right:20px;width:20%;vertical-align:middle"><img
-            src="images/logo/gigaai.png" , width="100"></td>
-        <td width="90%" valign="center">
-          <strong><a href="https://gigaai.cc/" target="_blank">GigaAI</a></strong>
-          <br> 2024.12 - 2025.06
-          <br> <strong>Research Intern</strong> at <a href="https://github.com/GigaAI-research">Research Group</a>
-          <br> Advisor: Dr. <a href="http://www.zhengzhu.net/">Zheng Zhu</a>
-        </td>
-      </tr>
-      <tr>
-        <br>
-        <td style="padding-left:20px;padding-right:20px;width:20%;vertical-align:middle"><img src="images/logo/zju.png"
-            , width="100"></td>
-        <td width="90%" valign="center">
-          <strong><a href="http://www.en.cs.zju.edu.cn/" target="_blank">College of Computer Science and Technology,
-            Zhejiang University</a></strong>
-          <br> 2021.09 - 2025.06
-          <br> <strong>Undergraduate</strong>
-          <br> B.E. with Honors in Software Engineering from <a href="http://www.en.cs.zju.edu.cn/">College of Computer
-            Science and Technology</a>
-          <br> Advanced Class of Engineering Education, <a href="http://ckc.zju.edu.cn/ckcen/">Chu Kochen Honors
-            College</a>
-          <br> Research Intern at <a href="https://github.com/zju3dv">ZJU3DV</a>, advised by Prof. <a
-            href="https://www.xzhou.me/">Xiaowei Zhou</a> and Prof. <a href="https://pengsida.net/">Sida Peng</a>
-          <br> Research Intern at <a href="https://github.com/HICAI-ZJU">HICAI-ZJU</a>, advised by Prof. <a
-            href="https://scholar.google.com/citations?user=T6om-m4AAAAJ">Huajun Chen</a> and Prof. <a
-            href="https://scholar.google.com/citations?user=A7u-ZowAAAAJ">Keyan Ding</a>
-        </td>
-      </tr>
-
-    </tbody>
-  </table>
-
-
-  <table style="width:90%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-      <tr>
-
-        <br>
-        <heading>Honors and Awards</heading>
-        <!-- <br> -->
-        <br>
-        <br>
-        <td style="padding:0px;width:100%;vertical-align:middle">
-          <p>
-            <li><em>2025.06</em> Outstanding Graduates of Zhejiang University</li>
-          </p>
-          <p>
-            <li><em>2025.06</em> Outstanding Thesis of Zhejiang University</li>
-          </p>
-          <p>
-            <li><em>2024.11</em> Third Class Scholarship in Zhejiang University</li>
-          </p>
-          <p>
-            <li><em>2024.10</em> Outstanding Students of Zhejiang University</li>
-          </p>
-          <p>
-            <li><em>2024.10</em> Innovation and Entrepreneurship Pioneer of Zhejiang University</li>
-          </p>
-          <p>
-            <li><em>2024.10</em> Academic Excellence Pioneer of Zhejiang University</li>
-          </p>
-          <p>
-            <li><em>2024.06</em> Third Prize of Zhejiang University "Dandelion" University Student Entrepreneurship
-              Competition</li>
-          </p>
-          <p>
-            <li><em>2023.11</em> Zhejiang Government Scholarship</li>
-          </p>
-          <p>
-            <li><em>2023.11</em> Zhejiang University Jiecang Linear Motion Technology Scholarship</li>
-          </p>
-          <p>
-            <li><em>2023.11</em> Second Class Scholarship in Zhejiang University</li>
-          </p>
-          <p>
-            <li><em>2023.10</em> Academic Excellence Pioneer of Zhejiang University</li>
-          </p>
-          <p>
-            <li><em>2023.10</em> Academic Progressive Role Model in Zhejiang University</li>
-          </p>
-          <p>
-            <li><em>2023.08</em> Third Prize of Asia and Pacific Mathematical Contest in Modeling</li>
-          </p>
-          <p>
-            <li><em>2023.06</em> Third Prize in the Final of the 16th Mock Mayor's Forum of Zhejiang University</li>
-          </p>
-          <p>
-            <li><em>2023.01</em> Meritorious Winner of The Interdisciplinary Contest in Modeling</li>
-          </p>
-          <p>
-            <li><em>2023.01</em> Second Prize of National College Students Mathematics Competition in Zhejiang Province
-            </li>
-          </p>
-          <p>
-            <li><em>2023.01</em> Third Prize of National College Students' Physics Competition in Zhejiang Province</li>
-          </p>
-          <p>
-            <li><em>2022.11</em> Third Class Scholarship in Zhejiang University</li>
-          </p>
-          <p>
-            <li><em>2022.10</em> Academic Excellence Pioneer of Zhejiang University</li>
-          </p>
-          <p>
-            <li><em>2021.01</em> Second Prize of China National Mathematics Olympiad in Shaanxi Province</li>
-          </p>
-          <p>
-            <li><em>2021.01</em> Third Prize of Chinese Physics Olympiad in Shaanxi Province</li>
-          </p>
-          <p>
-            <li><em>2020.07</em> Merit Student of Shaanxi Province</li>
-          </p>
-          <p>
-            <li><em>2020.01</em> Third Prize of Chinese Chemistry Olympiad in Shaanxi Province</li>
-          </p>
-          <p>
-            <li><em>2019.12</em> Outstanding Middle School Student, Xi'an City, Shaanxi Province</li>
-          </p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-  <table style="width:90%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-      <tr>
-        <br>
-        <heading>Talks</heading>
-        <br><br>
-        <td style="padding:0px;width:100%;vertical-align:middle">
-          <p>
-            <li>[2025/06/16] Invited talk of <strong>ZPressor: Bottleneck-Aware Compression for Scalable Feed-Forward
-                3DGS</strong> at <a href='https://www.3dcver.com/'>3DCVer</a>
-              [<a href="pdf\ZPressor.pdf">Slides</a> / <a href="https://www.bilibili.com/video/BV1NLN8zpENu">Video</a>]
-            </li>
-          </p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-  <table style="width:90%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-      <tr>
-        <br>
-        <heading>Academic Service</heading>
-        <br><br>
-        <td style="padding:0px;width:100%;vertical-align:middle">
-          <p>
-            <li>Journal Reviewer: IEEE Transactions on Visualization and Computer Graphics (TVCG)</li>
-          </p>
-
-          <p>
-            <li>Conference Reviewer: NeurIPS 2025, 3DV 2026, ICRA 2026</li>
-          </p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-  <table style="width:90%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-      <tr>
-        <br>
-        <heading>Teaching Assistant</heading>
-        <br><br>
-        <td style="padding:0px;width:100%;vertical-align:middle">
-          <p>
-            <li>[Spring 2025] <strong>Database System</strong>, with Prof. <a
-                href='https://person.zju.edu.cn/en/miaoxy_en'>Xiaoye Miao</a></li>
-          </p>
-
-          <p>
-            <li>[Spring 2024] <strong>Database System</strong>, with Prof. <a
-                href='https://person.zju.edu.cn/en/bzhou'>Bo Zhou</a></li>
-          </p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-      <tr>
-        <td style="padding:0px">
-          <br>
-          <p style="text-align:right;font-size:small;">
-            This template is a modification to <a href="https://jonbarron.info/">Jon Barron's website</a>.
-          </p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  </td>
-  </tr>
-  </table>
+  <footer class="site-footer">
+    <p>黄金阳 <span aria-hidden="true">/</span> Jinyang Huang</p>
+    <a href="#about">返回顶部 <span aria-hidden="true">↑</span></a>
+  </footer>
 </body>
-
 </html>
