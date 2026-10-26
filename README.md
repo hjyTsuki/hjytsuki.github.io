@@ -15,12 +15,11 @@ Open <http://localhost:8000>. The site uses static HTML, CSS, and a small JavaSc
 ## Files
 
 - `index.html`: biography, research, experience, and education.
-- `stylesheet.css`: responsive layout, locally hosted fonts, and print styles.
+- `stylesheet.css`: responsive layout, Times New Roman typography, and print styles.
 - `site.js`: accessible research filters and figure viewer.
 - `pdf/resume-zh.pdf`: the original Chinese CV.
 - `assets/papers/`: seven official paper figures, larger images, thumbnails, and source records.
 - `assets/papers/SOURCES.md`: figure URLs and provenance; `sources.json` also records crop coordinates and source checksums.
-- `assets/fonts/`: DM Sans and Instrument Serif, with their SIL Open Font License files.
 - `sitemap.xml`, `robots.txt`, `.nojekyll`: GitHub Pages and indexing configuration.
 
 When updating the CV, replace `pdf/resume-zh.pdf` and check the corresponding page text. For new figures, record the paper or official repository URL in the figure source records.
