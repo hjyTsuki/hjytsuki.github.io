@@ -1,26 +1,26 @@
-# 黄金阳 · Jinyang Huang
+# Jinyang Huang
 
-个人学术主页：<https://hjytsuki.github.io/>。
+Personal academic website: <https://hjytsuki.github.io/>.
 
-主页根据 `resume-zh.pdf` 整理，包含研究方向、9 项论文、实习经历、教育经历、个人链接与中文简历下载。论文标题、作者角色、发表或在投状态、关键数字和论文链接均以该简历为依据。
+An English homepage covering code agents, environment scaling, and post-training, with nine research works, experience, education, and a downloadable Chinese CV. Author roles, publication and submission status, and numerical results follow the supplied resume. Additional short descriptions and figures are grounded in the respective papers.
 
-## 本地预览
-
-在本目录运行：
+## Preview locally
 
 ```bash
 python3 -m http.server 8000
 ```
 
-然后访问 <http://localhost:8000>。也可以直接在浏览器中打开 `index.html`。本站使用静态 HTML 和 CSS，无需安装依赖或构建。
+Open <http://localhost:8000>. The site uses static HTML, CSS, and a small JavaScript file for publication filters and the figure viewer. No build step or dependencies are required. With JavaScript disabled, all works remain visible and figure links open the larger image directly.
 
-## 文件说明
+## Files
 
-- `index.html`：个人介绍、论文、实习与教育经历。
-- `stylesheet.css`：桌面、手机及打印样式。
-- `pdf/resume-zh.pdf`：可下载的原始中文简历。
-- `assets/favicon.svg`：个人主页图标。
-- `sitemap.xml`、`robots.txt`：搜索引擎索引配置。
-- `.nojekyll`：使 GitHub Pages 直接提供静态文件。
+- `index.html`: biography, research, experience, and education.
+- `stylesheet.css`: responsive layout, locally hosted fonts, and print styles.
+- `site.js`: accessible research filters and figure viewer.
+- `pdf/resume-zh.pdf`: the original Chinese CV.
+- `assets/papers/`: seven official paper figures, larger images, thumbnails, and source records.
+- `assets/papers/SOURCES.md`: figure URLs and provenance; `sources.json` also records crop coordinates and source checksums.
+- `assets/fonts/`: DM Sans and Instrument Serif, with their SIL Open Font License files.
+- `sitemap.xml`, `robots.txt`, `.nojekyll`: GitHub Pages and indexing configuration.
 
-更新简历后，请同步替换 `pdf/resume-zh.pdf` 并核对页面正文。当前使用 GitHub Pages 默认域名；配置自有域名时，同步更新页面的 canonical、Open Graph 地址、站点地图和 `robots.txt`。
+When updating the CV, replace `pdf/resume-zh.pdf` and check the corresponding page text. For new figures, record the paper or official repository URL in the figure source records.

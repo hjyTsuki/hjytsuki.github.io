@@ -1,0 +1,97 @@
+[
+  {
+    "slug": "cve-factory",
+    "source_url": "https://arxiv.org/pdf/2602.03012",
+    "source_file_sha256": "94eeac44c211257742baa5139b34684cbe19671b2faf274db9b90b337c10a6e8",
+    "source_page": 3,
+    "crop_pdf_points": [
+      52,
+      64,
+      556,
+      298
+    ],
+    "caption": "Figure 2: Overview of CVE-Factory",
+    "image": "cve-factory.webp",
+    "thumbnail": "cve-factory-thumb.webp"
+  },
+  {
+    "slug": "wrongselect",
+    "source_url": "https://arxiv.org/pdf/2510.08720",
+    "source_file_sha256": "0cc2879fa8bd292e6a5624341c4c54a49800d55addd82fa9a90d680ad94f69e3",
+    "source_page": 2,
+    "crop_pdf_points": [
+      108,
+      80,
+      505,
+      283
+    ],
+    "caption": "Figure 1: Comparison of test-case evaluation frameworks",
+    "image": "wrongselect.webp",
+    "thumbnail": "wrongselect-thumb.webp"
+  },
+  {
+    "slug": "envace",
+    "source_url": "https://raw.githubusercontent.com/Within-yao/EnvACE/main/assets/envace_framework.png",
+    "source_file_sha256": "3b46cb398d6712cf61b3dd2fcb9fdeb91f7be65f6fda651cc8f8cafdca9b757a",
+    "source_page": null,
+    "crop_pdf_points": null,
+    "caption": "Figure 1: Real environment, external simulator, and world rehearsal",
+    "image": "envace.webp",
+    "thumbnail": "envace-thumb.webp"
+  },
+  {
+    "slug": "mldebugging",
+    "source_url": "https://raw.githubusercontent.com/hjyTsuki/MLDebugging/main/assets/pipeline.png",
+    "source_file_sha256": "4c0c435c159a9af53017036520a071766b9e49d69e03bdabe78c71c50af69399",
+    "source_page": null,
+    "crop_pdf_points": null,
+    "caption": "Figure 2: Dataset construction pipeline",
+    "image": "mldebugging.webp",
+    "thumbnail": "mldebugging-thumb.webp"
+  },
+  {
+    "slug": "h3act",
+    "source_url": "https://www.usenix.org/system/files/usenixsecurity26-peng-qihang.pdf",
+    "source_file_sha256": "3662b75fec3c9ecbeba89d58bc3d3f27729217fe3612737eee3e8c56f391ba22",
+    "source_page": 6,
+    "crop_pdf_points": [
+      77,
+      68,
+      540,
+      218
+    ],
+    "caption": "Figure 2: The architecture of H3Act",
+    "image": "h3act.webp",
+    "thumbnail": "h3act-thumb.webp"
+  },
+  {
+    "slug": "beyond-shadows",
+    "source_url": "https://arxiv.org/pdf/2601.19309",
+    "source_file_sha256": "b9a666a2d42bc37e4a7c4185e0d20305df10b92ca498588adbbe991457accb49",
+    "source_page": 4,
+    "crop_pdf_points": [
+      54,
+      155,
+      299,
+      305
+    ],
+    "caption": "Figure 3: Qualitative facial shadow removal comparison",
+    "image": "beyond-shadows.webp",
+    "thumbnail": "beyond-shadows-thumb.webp"
+  },
+  {
+    "slug": "cytospm",
+    "source_url": "https://arxiv.org/pdf/2609.31314",
+    "source_file_sha256": "aed0894ac5fe48abc6634437f66ce7628f2ae7fd417c96e284fe6feed561d365",
+    "source_page": 4,
+    "crop_pdf_points": [
+      103,
+      50,
+      499,
+      213
+    ],
+    "caption": "Figure 3: Overview of CytoSPM",
+    "image": "cytospm.webp",
+    "thumbnail": "cytospm-thumb.webp"
+  }
+]

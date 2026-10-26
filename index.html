@@ -1,266 +1,243 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
-  <title>黄金阳 · Jinyang Huang</title>
-  <meta name="author" content="黄金阳 · Jinyang Huang">
-  <meta name="description" content="黄金阳，中南大学硕士研究生。研究方向包括 Code Agent、Environment Scaling 与 Post-Train，关注代码智能体、环境合成与智能体后训练。">
+  <title>Jinyang Huang | Code Agents &amp; Environment Scaling</title>
+  <meta name="author" content="Jinyang Huang">
+  <meta name="description" content="Jinyang Huang is a master's student at Central South University. His research focuses on code agents, environment scaling, and post-training.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="黄金阳 · Jinyang Huang">
-  <meta property="og:description" content="中南大学硕士研究生 · Code Agent · Environment Scaling · Post-Train">
+  <meta property="og:title" content="Jinyang Huang">
+  <meta property="og:description" content="Code agents. Richer environments. Better learning. Research, publications, and experience.">
   <meta property="og:url" content="https://hjytsuki.github.io/">
   <link rel="canonical" href="https://hjytsuki.github.io/">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preload" href="assets/fonts/instrument-serif-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="stylesheet.css">
+  <script src="site.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">跳转到正文</a>
-  <header class="site-header">
-    <a class="wordmark" href="#about" aria-label="黄金阳，返回个人介绍">HJY<span>.</span></a>
-    <nav aria-label="主导航">
-      <a href="#research">研究方向</a>
-      <a href="#publications">论文</a>
-      <a href="#experience">实习经历</a>
-      <a href="#education">教育经历</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="wordmark" href="#about" aria-label="Jinyang Huang, home">jh<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#publications">Research</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
     </nav>
+    <a class="header-cv" href="pdf/resume-zh.pdf" download="Jinyang-Huang-CV-Chinese.pdf" aria-label="Download CV in Chinese">CV <span aria-hidden="true">↗</span></a>
   </header>
 
-  <main id="main">
+  <main id="main" class="wrap">
     <section class="hero" id="about" aria-labelledby="name">
-      <div class="hero-content">
-        <p class="eyebrow">中南大学 · 硕士研究生</p>
-        <h1 id="name">黄金阳<span lang="en">Jinyang Huang</span></h1>
-        <p class="research-line" lang="en">Code Agent <span>·</span> Environment Scaling <span>·</span> Post-Train</p>
-        <p class="intro">我关注代码智能体的能力评估、可扩展的环境合成与智能体后训练，希望通过更有判别力的评测和更丰富的训练环境，提升智能体解决真实任务的能力。</p>
-        <p class="intro">目前在中南大学攻读硕士学位，并在字节跳动中国交易与广告团队从事应用算法实习。本科毕业于湖南师范大学。</p>
+      <div class="hero-identity">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Master's student · Central South University</p>
+        <h1 id="name"><span>Jinyang</span><span>Huang<span class="name-dot">.</span></span></h1>
+        <p class="hero-tagline">Code agents. Richer environments.<br>Better learning.</p>
       </div>
-      <aside class="contact" aria-label="联系方式与个人链接">
-        <p class="contact-heading">保持联系</p>
-        <a class="email" href="mailto:hjy.tsuki@gmail.com">hjy.tsuki@gmail.com</a>
-        <div class="profile-links">
+      <div class="hero-intro">
+        <p class="intro-lead">I study how to make code agents more capable through <em>better tasks, richer environments,</em> and post-training.</p>
+        <p class="intro-bio">I'm a master's student at <a href="https://www.csu.edu.cn/" target="_blank" rel="noopener noreferrer">Central South University</a> and an applied algorithm intern at <a href="https://www.bytedance.com/" target="_blank" rel="noopener noreferrer">ByteDance</a>. I received my bachelor's degree from Hunan Normal University in 2025.</p>
+        <div class="interest-tags" id="research" aria-label="Research interests">
+          <span>Code Agent</span><span>Environment Scaling</span><span>Post-training</span>
+        </div>
+        <div class="contact-links" aria-label="Contact and profiles">
+          <a class="button-primary" href="mailto:hjy.tsuki@gmail.com">Email me <span aria-hidden="true">↗</span></a>
           <a href="https://scholar.google.com/citations?user=Oqn8PEsAAAAJ&amp;hl=zh-CN" target="_blank" rel="noopener noreferrer">Google Scholar <span aria-hidden="true">↗</span></a>
           <a href="https://github.com/hjyTsuki" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
         </div>
-        <a class="resume-link" href="pdf/resume-zh.pdf" download="黄金阳-简历.pdf">下载中文简历 <span aria-hidden="true">↓</span></a>
-      </aside>
-    </section>
-
-    <section class="section research-section" id="research" aria-labelledby="research-title">
-      <div class="section-heading">
-        <h2 id="research-title">研究方向</h2>
-        <span lang="en">Research interests</span>
-      </div>
-      <div class="research-grid">
-        <article>
-          <span class="research-number" aria-hidden="true">01</span>
-          <h3 lang="en">Code Agent</h3>
-          <p>面向代码调试与代码安全，构建可执行任务和具有判别力的评测集。</p>
-        </article>
-        <article>
-          <span class="research-number" aria-hidden="true">02</span>
-          <h3 lang="en">Environment Scaling</h3>
-          <p>从真实环境出发合成环境家族，为终端智能体提供可扩展的训练任务。</p>
-        </article>
-        <article>
-          <span class="research-number" aria-hidden="true">03</span>
-          <h3 lang="en">Post-Train</h3>
-          <p>探索 SFT、RL 与 GRPO，让智能体学会检查环境、理解反馈并采取行动。</p>
-        </article>
       </div>
     </section>
 
-    <section class="section" id="publications" aria-labelledby="publications-title">
+    <section class="publications-section" id="publications" aria-labelledby="publications-title">
+      <div class="section-topline"><span class="eyebrow">Research</span><span class="section-number" aria-hidden="true">01 /</span></div>
       <div class="section-heading">
-        <h2 id="publications-title">论文</h2>
-        <span lang="en">Publications &amp; preprints</span>
+        <div>
+          <h2 id="publications-title">Research &amp; publications</h2>
+          <p>Agents, code, and learning from interaction.</p>
+        </div>
+        <div class="publication-filters" role="group" aria-label="Filter research" hidden>
+          <button type="button" data-filter="all" aria-pressed="true">All work <span>09</span></button>
+          <button type="button" data-filter="agents" aria-pressed="false">Agents &amp; systems <span>06</span></button>
+          <button type="button" data-filter="vision" aria-pressed="false">Multimodal &amp; vision <span>03</span></button>
+        </div>
       </div>
+      <p class="sr-only" id="result-count" role="status" aria-live="polite">9 research works shown.</p>
+
       <div class="paper-list">
-        <article class="paper paper-featured">
-          <div class="paper-venue">
-            <span class="venue-name" lang="en">ICML 2026</span>
-            <span class="venue-detail" lang="en">Oral · Top 0.7%</span>
-          </div>
-          <div class="paper-content">
-            <h3 lang="en"><a href="https://arxiv.org/pdf/2602.03012" target="_blank" rel="noopener noreferrer">CVE-Factory: Scaling Agentic Tasks for Code Security</a></h3>
-            <p class="author-role">共同第一作者</p>
-            <p class="paper-description">提出多智能体框架 CVE-Factory，通过解耦–耦合六阶段流水线，将稀疏 CVE 元数据自动转化为可执行任务，方案正确率达 <strong>95%</strong>。构建 LiveCVEBench，通过拒绝采样轨迹微调，将 Qwen3-32B 的表现从 <strong>5.3% 提升至 35.8%</strong>，超过 Claude 4.5 Sonnet；Terminal-Bench 从 <strong>12.5% 提升至 28.75%</strong>。</p>
-            <div class="paper-links">
-              <a href="https://arxiv.org/pdf/2602.03012" target="_blank" rel="noopener noreferrer" aria-label="CVE-Factory 论文">arXiv <span aria-hidden="true">↗</span></a>
-              <a href="https://github.com/livecvebench/CVE-Factory" target="_blank" rel="noopener noreferrer" aria-label="CVE-Factory 代码">Code <span aria-hidden="true">↗</span></a>
-            </div>
+        <article class="paper paper-featured" data-area="agents" id="cve-factory">
+          <a class="paper-figure" href="assets/papers/cve-factory.webp" data-caption="CVE-Factory — Figure 2: Overview of the six-stage task construction pipeline." data-source="https://arxiv.org/pdf/2602.03012" aria-label="Enlarge the CVE-Factory pipeline figure">
+            <img src="assets/papers/cve-factory-thumb.webp" width="640" height="297" alt="CVE-Factory's six-stage pipeline for constructing and validating executable vulnerability tasks." decoding="async">
+            <span class="figure-expand" aria-hidden="true">＋</span>
+          </a>
+          <div class="paper-body">
+            <div class="paper-meta"><span class="venue venue-blue">ICML 2026 · Oral</span><span class="distinction">Top 0.7%</span><span class="paper-topic">Code security</span></div>
+            <h3><a href="https://arxiv.org/pdf/2602.03012" target="_blank" rel="noopener noreferrer">CVE-Factory: Scaling Agentic Tasks for Code Security</a></h3>
+            <p class="author-role">Co-first author</p>
+            <p class="paper-description">A six-stage multi-agent pipeline turns sparse CVE metadata into executable tasks with <strong>95% correctness</strong>. Fine-tuning Qwen3-32B on sampled trajectories improves LiveCVEBench from <strong>5.3% → 35.8%</strong>, surpassing Claude 4.5 Sonnet, and Terminal-Bench from <strong>12.5% → 28.75%</strong>.</p>
+            <div class="paper-links"><a href="https://arxiv.org/pdf/2602.03012" target="_blank" rel="noopener noreferrer" aria-label="CVE-Factory paper">Paper <span aria-hidden="true">↗</span></a><a href="https://github.com/livecvebench/CVE-Factory" target="_blank" rel="noopener noreferrer" aria-label="CVE-Factory code">Code <span aria-hidden="true">↗</span></a></div>
           </div>
         </article>
 
-        <article class="paper">
-          <div class="paper-venue">
-            <span class="venue-name" lang="en">ICLR 2026</span>
-            <span class="venue-detail" lang="en">Poster</span>
-          </div>
-          <div class="paper-content">
-            <h3 lang="en"><a href="https://arxiv.org/pdf/2510.08720" target="_blank" rel="noopener noreferrer">How Many Tests Are Enough? A Binary-Matrix Perspective</a></h3>
-            <p class="author-role">共同第一作者</p>
-            <p class="paper-description">面向代码生成强化学习中的测试用例质量评估，提出 WrongSelect：将 TestCase 与 Wrong Code 的通过关系建模为二值矩阵，利用矩阵秩过滤同模式错误代码，构建紧凑且具判别性的评测集，降低暴力匹配成本并避免重复错误导致的分数虚高。</p>
-            <div class="paper-links">
-              <a href="https://arxiv.org/pdf/2510.08720" target="_blank" rel="noopener noreferrer" aria-label="How Many Tests Are Enough 论文">arXiv <span aria-hidden="true">↗</span></a>
-              <a href="https://github.com/hjyTsuki/TC-Bench-Evaluate" target="_blank" rel="noopener noreferrer" aria-label="How Many Tests Are Enough 代码">Code <span aria-hidden="true">↗</span></a>
-            </div>
+        <article class="paper" data-area="agents" id="wrongselect">
+          <a class="paper-figure" href="assets/papers/wrongselect.webp" data-caption="How Many Tests Are Enough? — Figure 1: Comparing full-set evaluation with WrongSelect's compact, discriminative evaluation." data-source="https://arxiv.org/pdf/2510.08720" aria-label="Enlarge the WrongSelect evaluation figure">
+            <img src="assets/papers/wrongselect-thumb.webp" width="640" height="327" alt="A comparison of naive test-case evaluation and WrongSelect's binary-matrix approach." loading="lazy" decoding="async">
+            <span class="figure-expand" aria-hidden="true">＋</span>
+          </a>
+          <div class="paper-body">
+            <div class="paper-meta"><span class="venue">ICLR 2026 · Poster</span><span class="paper-topic">Evaluation</span></div>
+            <h3><a href="https://arxiv.org/pdf/2510.08720" target="_blank" rel="noopener noreferrer">How Many Tests Are Enough? A Binary-Matrix Perspective</a></h3>
+            <p class="author-role">Co-first author</p>
+            <p class="paper-description">WrongSelect models test outcomes as a binary matrix and uses matrix rank to remove redundant error patterns. The resulting compact evaluation sets reduce computation and avoid inflated test-case quality scores.</p>
+            <div class="paper-links"><a href="https://arxiv.org/pdf/2510.08720" target="_blank" rel="noopener noreferrer" aria-label="How Many Tests Are Enough paper">Paper <span aria-hidden="true">↗</span></a><a href="https://github.com/hjyTsuki/TC-Bench-Evaluate" target="_blank" rel="noopener noreferrer" aria-label="How Many Tests Are Enough code">Code <span aria-hidden="true">↗</span></a></div>
           </div>
         </article>
 
-        <article class="paper">
-          <div class="paper-venue">
-            <span class="venue-name" lang="en">ICLR 2027</span>
-            <span class="venue-detail submission">在投</span>
-          </div>
-          <div class="paper-content">
-            <h3 lang="en">SCOPE: Environment Families for Terminal Agents</h3>
-            <p class="author-role">共同第一作者</p>
-            <p class="paper-description">提出可扩展的终端环境合成与后训练管线 SCOPE，从真实 Docker 环境和成功轨迹自动生成 observation-preserving counterfactual environments，让智能体先检查环境状态再决策，同时生成 inspect-then-act SFT 轨迹与 RL/GRPO 数据。在 <strong>Terminal-Bench 2.1</strong> 上，SFT 从 <strong>22.2% 提升至 30.8%</strong>，Direct RL（GRPO）从 <strong>22.2% 提升至 39.4%</strong>。</p>
-          </div>
-        </article>
-
-        <article class="paper">
-          <div class="paper-venue">
-            <span class="venue-name" lang="en">ICLR 2027</span>
-            <span class="venue-detail submission">在投</span>
-          </div>
-          <div class="paper-content">
-            <h3 lang="en"><a href="https://arxiv.org/abs/2608.06197" target="_blank" rel="noopener noreferrer">EnvACE: World Rehearsal for Agentic RL</a></h3>
-            <p class="author-role">作者</p>
-            <p class="paper-description">通过 World Rehearsal 机制，让单一策略同时执行动作、预测环境反馈并据此决策，从而无需外部环境即可学习环境动态，并在 BFCL-v4、τ²-Bench 和 VitaBench 上取得更优表现。</p>
-            <div class="paper-links">
-              <a href="https://arxiv.org/abs/2608.06197" target="_blank" rel="noopener noreferrer" aria-label="EnvACE 论文">arXiv <span aria-hidden="true">↗</span></a>
-              <a href="https://github.com/Within-yao/EnvACE" target="_blank" rel="noopener noreferrer" aria-label="EnvACE 代码">Code <span aria-hidden="true">↗</span></a>
-            </div>
+        <article class="paper" data-area="agents" id="envace">
+          <a class="paper-figure" href="assets/papers/envace.webp" data-caption="EnvACE — Figure 1: Real-environment rollout, external-simulator rollout, and world rehearsal." data-source="https://arxiv.org/abs/2608.06197" aria-label="Enlarge the EnvACE world rehearsal figure">
+            <img src="assets/papers/envace-thumb.webp" width="640" height="330" alt="Three agent rollout paradigms, contrasting real environments and external simulators with EnvACE world rehearsal." loading="lazy" decoding="async">
+            <span class="figure-expand" aria-hidden="true">＋</span>
+          </a>
+          <div class="paper-body">
+            <div class="paper-meta"><span class="venue venue-review">ICLR 2027 · Under review</span><span class="paper-topic">Agentic RL</span></div>
+            <h3><a href="https://arxiv.org/abs/2608.06197" target="_blank" rel="noopener noreferrer">EnvACE: World Rehearsal for Agentic RL</a></h3>
+            <p class="author-role">Author</p>
+            <p class="paper-description">World Rehearsal lets a single policy act, predict environment responses, and learn from its own rehearsals without an external environment. EnvACE improves performance on BFCL-v4, τ²-Bench, and VitaBench.</p>
+            <div class="paper-links"><a href="https://arxiv.org/abs/2608.06197" target="_blank" rel="noopener noreferrer" aria-label="EnvACE paper">Paper <span aria-hidden="true">↗</span></a><a href="https://github.com/Within-yao/EnvACE" target="_blank" rel="noopener noreferrer" aria-label="EnvACE code">Code <span aria-hidden="true">↗</span></a></div>
           </div>
         </article>
 
-        <article class="paper paper-compact">
-          <div class="paper-venue">
-            <span class="venue-name" lang="en">ACL</span>
-            <span class="venue-detail submission">在投</span>
-          </div>
-          <div class="paper-content">
-            <h3 lang="en">MMRefineBench: Benchmarking Multimodal Self-Correction</h3>
-            <p class="author-role">作者</p>
-          </div>
-        </article>
-
-        <article class="paper paper-compact">
-          <div class="paper-venue">
-            <span class="venue-name" lang="en">USENIX Security 2026</span>
-            <span class="venue-detail" lang="en">CCF-A</span>
-          </div>
-          <div class="paper-content">
-            <h3 lang="en"><a href="https://www.usenix.org/conference/usenixsecurity26/presentation/peng-qihang" target="_blank" rel="noopener noreferrer">H3Act: HTTP/3-to-HTTP/1.1 Conversion Anomalies</a></h3>
-            <p class="author-role">作者</p>
-            <div class="paper-links">
-              <a href="https://www.usenix.org/conference/usenixsecurity26/presentation/peng-qihang" target="_blank" rel="noopener noreferrer" aria-label="H3Act 论文">Paper <span aria-hidden="true">↗</span></a>
-            </div>
+        <article class="paper" data-area="agents" id="mldebugging">
+          <a class="paper-figure" href="assets/papers/mldebugging.webp" data-caption="MLDebugging — Figure 2: The multi-library debugging dataset construction pipeline." data-source="https://arxiv.org/abs/2506.13824" aria-label="Enlarge the MLDebugging pipeline figure">
+            <img src="assets/papers/mldebugging-thumb.webp" width="640" height="272" alt="MLDebugging's pipeline for constructing debugging tasks across multiple libraries." loading="lazy" decoding="async">
+            <span class="figure-expand" aria-hidden="true">＋</span>
+          </a>
+          <div class="paper-body">
+            <div class="paper-meta"><span class="venue">ACL Findings 2025</span><span class="paper-topic">CCF-A · Code debugging</span></div>
+            <h3><a href="https://arxiv.org/abs/2506.13824" target="_blank" rel="noopener noreferrer">MLDebugging: Code Debugging Across Multiple Libraries</a></h3>
+            <p class="author-role">First author</p>
+            <p class="paper-description">A benchmark for debugging errors that arise from interactions between multiple libraries, extending code debugging beyond isolated functions and static bugs.</p>
+            <div class="paper-links"><a href="https://arxiv.org/abs/2506.13824" target="_blank" rel="noopener noreferrer" aria-label="MLDebugging paper">Paper <span aria-hidden="true">↗</span></a><a href="https://github.com/hjyTsuki/MLDebugging" target="_blank" rel="noopener noreferrer" aria-label="MLDebugging code">Code <span aria-hidden="true">↗</span></a></div>
           </div>
         </article>
 
-        <article class="paper paper-compact">
-          <div class="paper-venue">
-            <span class="venue-name" lang="en">ACL Findings 2025</span>
-            <span class="venue-detail" lang="en">CCF-A</span>
-          </div>
-          <div class="paper-content">
-            <h3 lang="en"><a href="https://arxiv.org/abs/2506.13824" target="_blank" rel="noopener noreferrer">MLDebugging: Code Debugging Across Multiple Libraries</a></h3>
-            <p class="author-role">第一作者</p>
-            <div class="paper-links">
-              <a href="https://arxiv.org/abs/2506.13824" target="_blank" rel="noopener noreferrer" aria-label="MLDebugging 论文">arXiv <span aria-hidden="true">↗</span></a>
-              <a href="https://github.com/hjyTsuki/MLDebugging" target="_blank" rel="noopener noreferrer" aria-label="MLDebugging 代码">Code <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-        </article>
-
-        <article class="paper paper-compact">
-          <div class="paper-venue">
-            <span class="venue-name" lang="en">ICASSP 2026</span>
-            <span class="venue-detail" lang="en">CCF-B</span>
-          </div>
-          <div class="paper-content">
-            <h3 lang="en"><a href="https://arxiv.org/pdf/2601.19309" target="_blank" rel="noopener noreferrer">Beyond Shadows: High-Fidelity Facial Shadow Removal</a></h3>
-            <p class="author-role">作者</p>
-            <div class="paper-links">
-              <a href="https://arxiv.org/pdf/2601.19309" target="_blank" rel="noopener noreferrer" aria-label="Beyond Shadows 论文">arXiv <span aria-hidden="true">↗</span></a>
-            </div>
+        <article class="paper" data-area="agents" id="h3act">
+          <a class="paper-figure" href="assets/papers/h3act.webp" data-caption="H3Act — Figure 2: The architecture for detecting HTTP translation anomalies." data-source="https://www.usenix.org/conference/usenixsecurity26/presentation/peng-qihang" aria-label="Enlarge the H3Act architecture figure">
+            <img src="assets/papers/h3act-thumb.webp" width="640" height="207" alt="H3Act's architecture with knowledge retrieval and dual-agent fuzzing for HTTP conversion anomalies." loading="lazy" decoding="async">
+            <span class="figure-expand" aria-hidden="true">＋</span>
+          </a>
+          <div class="paper-body">
+            <div class="paper-meta"><span class="venue">USENIX Security 2026</span><span class="paper-topic">CCF-A · Systems security</span></div>
+            <h3><a href="https://www.usenix.org/conference/usenixsecurity26/presentation/peng-qihang" target="_blank" rel="noopener noreferrer">H3Act: HTTP/3-to-HTTP/1.1 Conversion Anomalies</a></h3>
+            <p class="author-role">Author</p>
+            <p class="paper-description">Measuring semantic and security anomalies in HTTP/3-to-HTTP/1.1 translation through automated, agent-assisted testing.</p>
+            <div class="paper-links"><a href="https://www.usenix.org/conference/usenixsecurity26/presentation/peng-qihang" target="_blank" rel="noopener noreferrer" aria-label="H3Act paper">Paper <span aria-hidden="true">↗</span></a></div>
           </div>
         </article>
 
-        <article class="paper paper-compact">
-          <div class="paper-venue">
-            <span class="venue-name" lang="en">BIBM 2026</span>
-            <span class="venue-detail" lang="en">CCF-B</span>
-          </div>
-          <div class="paper-content">
-            <h3 lang="en"><a href="https://arxiv.org/abs/2609.31314" target="_blank" rel="noopener noreferrer">CytoSPM: Open-Vocabulary Cytopathology Detection</a></h3>
-            <p class="author-role">作者</p>
-            <div class="paper-links">
-              <a href="https://arxiv.org/abs/2609.31314" target="_blank" rel="noopener noreferrer" aria-label="CytoSPM 论文">arXiv <span aria-hidden="true">↗</span></a>
-            </div>
+        <article class="paper" data-area="vision" id="beyond-shadows">
+          <a class="paper-figure" href="assets/papers/beyond-shadows.webp" data-caption="Beyond Shadows — Figure 3: Facial shadow removal results on ASFW and UCB, with comparison methods and ground truth." data-source="https://arxiv.org/pdf/2601.19309" aria-label="Enlarge the facial shadow removal comparison">
+            <img src="assets/papers/beyond-shadows-thumb.webp" width="640" height="392" alt="A qualitative comparison of facial shadow removal methods, showing inputs, predictions, and ground truth." loading="lazy" decoding="async">
+            <span class="figure-expand" aria-hidden="true">＋</span>
+          </a>
+          <div class="paper-body">
+            <div class="paper-meta"><span class="venue">ICASSP 2026</span><span class="paper-topic">CCF-B · Computer vision</span></div>
+            <h3><a href="https://arxiv.org/pdf/2601.19309" target="_blank" rel="noopener noreferrer">Beyond Shadows: High-Fidelity Facial Shadow Removal</a></h3>
+            <p class="author-role">Author</p>
+            <p class="paper-description">A large-scale benchmark and multi-stage framework for removing facial shadows while preserving fine details and visual fidelity.</p>
+            <div class="paper-links"><a href="https://arxiv.org/pdf/2601.19309" target="_blank" rel="noopener noreferrer" aria-label="Beyond Shadows paper">Paper <span aria-hidden="true">↗</span></a></div>
           </div>
         </article>
+
+        <article class="paper" data-area="vision" id="cytospm">
+          <a class="paper-figure" href="assets/papers/cytospm.webp" data-caption="CytoSPM — Figure 3: Class-agnostic visual extraction and class-aware structural prompt matching." data-source="https://arxiv.org/abs/2609.31314" aria-label="Enlarge the CytoSPM framework figure">
+            <img src="assets/papers/cytospm-thumb.webp" width="640" height="263" alt="CytoSPM's two-stage framework for open-vocabulary cytopathology detection with structured prompts." loading="lazy" decoding="async">
+            <span class="figure-expand" aria-hidden="true">＋</span>
+          </a>
+          <div class="paper-body">
+            <div class="paper-meta"><span class="venue">BIBM 2026</span><span class="paper-topic">CCF-B · Medical vision</span></div>
+            <h3><a href="https://arxiv.org/abs/2609.31314" target="_blank" rel="noopener noreferrer">CytoSPM: Open-Vocabulary Cytopathology Detection</a></h3>
+            <p class="author-role">Author</p>
+            <p class="paper-description">Open-vocabulary cytopathology detection with a structured prompt bank, separating visual feature extraction from class-aware prompt matching.</p>
+            <div class="paper-links"><a href="https://arxiv.org/abs/2609.31314" target="_blank" rel="noopener noreferrer" aria-label="CytoSPM paper">Paper <span aria-hidden="true">↗</span></a></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="research-notes">
+        <p class="notes-heading">Additional work under review</p>
+        <div class="notes-grid">
+          <article class="paper-note" data-area="agents" id="scope">
+            <div class="paper-meta"><span class="venue venue-review">ICLR 2027 · Under review</span></div>
+            <h3>SCOPE: Environment Families for Terminal Agents</h3>
+            <p class="author-role">Co-first author</p>
+            <p class="paper-description">Observation-preserving counterfactual environments train agents to inspect before acting, with inspect-then-act SFT trajectories and RL/GRPO data. On <strong>Terminal-Bench 2.1</strong>, SFT improves from <strong>22.2% → 30.8%</strong> and Direct RL (GRPO) from <strong>22.2% → 39.4%</strong>.</p>
+          </article>
+          <article class="paper-note" data-area="vision" id="mmrefinebench">
+            <div class="paper-meta"><span class="venue venue-review">ACL · Under review</span></div>
+            <h3>MMRefineBench: Benchmarking Multimodal Self-Correction</h3>
+            <p class="author-role">Author</p>
+            <p class="paper-description">Benchmarking the self-correction capabilities of multimodal models.</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="section" id="experience" aria-labelledby="experience-title">
-      <div class="section-heading">
-        <h2 id="experience-title">实习经历</h2>
-        <span lang="en">Experience</span>
-      </div>
-      <div class="experience-list">
-        <article class="experience-item">
-          <div class="item-heading">
-            <h3>字节跳动</h3>
-            <p class="date"><time datetime="2026-07">2026.07</time> — 至今</p>
-          </div>
-          <p class="item-role">中国交易与广告 · 应用算法</p>
-          <p class="experience-description">面向线上广告审核 Workflow，配置轻量级路由模型为审核请求选择合适的模型，降低整体调用成本。利用 Qwen-0.8B 的 Last Hidden States 构建分类与 Decision Model，清洗存在分布偏移的线上训练数据，构建与 Pass@k 对齐的标签并扩展数据规模。</p>
-          <p class="experience-result">在维持 <strong>90% 精确率</strong>的情况下，将召回率从 <strong>52.91% 提升至 77.02%</strong>，推动 <strong>10 个 Tag</strong> 上线并取得可量化收益。</p>
-        </article>
-        <article class="experience-item">
-          <div class="item-heading">
-            <h3>马栏山音视频实验室</h3>
-            <p class="date"><time datetime="2025-06">2025.06</time> — <time datetime="2025-09">2025.09</time></p>
-          </div>
-          <p class="item-role">应用算法</p>
-        </article>
-        <article class="experience-item">
-          <div class="item-heading">
-            <h3>度小满金融</h3>
-            <p class="date"><time datetime="2025-01">2025.01</time> — <time datetime="2025-03">2025.03</time></p>
-          </div>
-          <p class="item-role">数据智能应用部 · Research</p>
-        </article>
-      </div>
-    </section>
+    <div class="background-grid">
+      <section id="experience" class="background-section" aria-labelledby="experience-title">
+        <div class="section-topline"><span class="eyebrow">Industry</span><span class="section-number" aria-hidden="true">02 /</span></div>
+        <h2 id="experience-title">Experience</h2>
+        <div class="experience-list">
+          <article class="experience-item">
+            <div class="item-heading"><h3>ByteDance</h3><p class="date"><time datetime="2026-07">Jul 2026</time> — Present</p></div>
+            <p class="item-role">China Commerce &amp; Advertising · Applied Algorithms</p>
+            <p class="experience-description">Built lightweight routing models for advertising review workflows using Qwen-0.8B's last hidden states. Cleaned distribution-shifted data and expanded training labels aligned with Pass@k.</p>
+            <p class="experience-result">Recall <strong>52.91% → 77.02%</strong> at <strong>90% precision</strong>; deployed across <strong>10 tags</strong> with measurable impact.</p>
+          </article>
+          <article class="experience-item">
+            <div class="item-heading"><h3>Malanshan Audio &amp; Video Laboratory</h3><p class="date"><time datetime="2025-06">Jun 2025</time> — <time datetime="2025-09">Sep 2025</time></p></div>
+            <p class="item-role">Applied Algorithms</p>
+          </article>
+          <article class="experience-item">
+            <div class="item-heading"><h3>Du Xiaoman Financial</h3><p class="date"><time datetime="2025-01">Jan 2025</time> — <time datetime="2025-03">Mar 2025</time></p></div>
+            <p class="item-role">Data Intelligence Applications · Research</p>
+          </article>
+        </div>
+      </section>
+      <section id="education" class="background-section" aria-labelledby="education-title">
+        <div class="section-topline"><span class="eyebrow">Academic background</span><span class="section-number" aria-hidden="true">03 /</span></div>
+        <h2 id="education-title">Education</h2>
+        <div class="education-list">
+          <article class="education-item">
+            <p class="date"><time datetime="2025">2025</time> — Present</p>
+            <h3>Central South University</h3>
+            <p class="item-role">Master's student</p>
+          </article>
+          <article class="education-item">
+            <p class="date"><time datetime="2021">2021</time> — <time datetime="2025">2025</time></p>
+            <h3>Hunan Normal University</h3>
+            <p class="item-role">Bachelor's degree · Project 211 university</p>
+            <div class="education-stats"><span>GPA <strong>92.04/100</strong></span><span>Rank <strong>2/74</strong></span></div>
+          </article>
+        </div>
+      </section>
+    </div>
 
-    <section class="section education-section" id="education" aria-labelledby="education-title">
-      <div class="section-heading">
-        <h2 id="education-title">教育经历</h2>
-        <span lang="en">Education</span>
-      </div>
-      <div class="education-grid">
-        <article>
-          <p class="education-degree">硕士 · <time datetime="2025">2025</time> — 至今</p>
-          <h3>中南大学</h3>
-        </article>
-        <article>
-          <p class="education-degree">本科 · <time datetime="2021">2021</time> — <time datetime="2025">2025</time></p>
-          <h3>湖南师范大学 <span class="school-note">211</span></h3>
-          <p class="education-detail">GPA <strong>92.04/100</strong> <span aria-hidden="true">·</span> 专业排名 <strong>2/74</strong></p>
-        </article>
-      </div>
+    <section class="contact-section" aria-labelledby="contact-title">
+      <div><p class="eyebrow">Let's connect</p><h2 id="contact-title">Always happy to talk <em>research.</em></h2></div>
+      <a class="contact-email" href="mailto:hjy.tsuki@gmail.com">hjy.tsuki@gmail.com <span aria-hidden="true">↗</span></a>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <p>黄金阳 <span aria-hidden="true">/</span> Jinyang Huang</p>
-    <a href="#about">返回顶部 <span aria-hidden="true">↑</span></a>
-  </footer>
+  <footer class="site-footer wrap"><p>Jinyang Huang <span aria-hidden="true">·</span> 2026</p><a href="#about">Back to top <span aria-hidden="true">↑</span></a></footer>
+
+  <dialog class="figure-dialog" id="figure-dialog" aria-labelledby="figure-caption">
+    <button type="button" class="dialog-close" aria-label="Close figure viewer">×</button>
+    <figure><img id="figure-image" alt=""><figcaption id="figure-caption"></figcaption></figure>
+    <a class="figure-source" id="figure-source" href="https://arxiv.org/pdf/2602.03012" target="_blank" rel="noopener noreferrer">View paper <span aria-hidden="true">↗</span></a>
+  </dialog>
 </body>
 </html>
